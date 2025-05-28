@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Про розробника">
+        <Preference
+            android:key="pref_developer_info"
+            android:title="SKIFY"
+            android:summary="Іван • ivanmail@example.com"
+            android:selectable="false"/>
+    </PreferenceCategory>
+
+    <SwitchPreferenceCompat
+        android:key="pref_dark_mode"
+        android:title="Тема додатку"
+        android:summaryOff="Світла"
+        android:summaryOn="Темна"
+        android:defaultValue="true" />
+
+    <Preference
+        android:key="pref_reset_data"
+        android:title="Скинути всі дані"
+        android:summary="Видалити всі породи і обрані"
+        android:icon="@android:drawable/ic_menu_delete"/>
+
+</PreferenceScreen>

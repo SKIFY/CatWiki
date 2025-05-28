@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--============================
+         1) Основна тема з DayNight
+    =============================-->
+    <style name="Theme.CatWikiPrototype" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- головні кольори -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- статус-бар -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- текст поверх поверхонь -->
+        <item name="colorOnSurface">?android:attr/textColorPrimary</item>
+        <item name="colorOnSurfaceVariant">?android:attr/textColorSecondary</item>
+
+        <!-- Підмінюємо стиль Toolbar і FAB -->
+        <item name="toolbarStyle">@style/Widget.CatWiki.Toolbar</item>
+        <item name="floatingActionButtonStyle">@style/Widget.CatWiki.FAB</item>
+    </style>
+
+    <!--============================
+         2) Toolbar зі своїм шрифтом
+    =============================-->
+    <style name="Widget.CatWiki.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="titleTextAppearance">@style/TextAppearance.CatWiki.Toolbar.Title</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="TextAppearance.CatWiki.Toolbar.Title"
+        parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="fontFamily">@font/cherry_bomb_one_regular</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <!--============================
+         3) Material-кнопка для пустого стану
+    =============================-->
+    <style name="Widget.CatWiki.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <!--============================
+         4) Стиль FAB
+    =============================-->
+    <style name="Widget.CatWiki.FAB" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="rippleColor">?attr/colorOnPrimary</item>
+        <item name="useCompatPadding">true</item>
+        <item name="pressedTranslationZ">8dp</item>
+    </style>
+
+    <!--============================
+         5) Оверлей для MaterialCardView
+    =============================-->
+    <style name="ShapeAppearanceOverlay.MyCard" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CatWiki</string>
+    <string name="favorites_list_description">Список улюблених котів</string>
+    <string name="delete">Видалити</string>
+    <string name="btn_add_favorite">У обране</string>
+    <string name="btn_remove_favorite">Вилучити з улюблених</string>
+
+</resources>

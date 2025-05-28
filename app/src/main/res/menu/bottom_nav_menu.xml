@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_catalog"
+        android:icon="@drawable/ic_catalog"
+        android:title="Породи" />
+    <item
+        android:id="@+id/nav_favorites"
+        android:icon="@drawable/ic_favorite"
+        android:title="Улюблені" />
+
+    <item
+        android:id="@+id/nav_random"
+        android:icon="@drawable/ic_shuffle"
+    android:title="Випадкова порода" />
+</menu>

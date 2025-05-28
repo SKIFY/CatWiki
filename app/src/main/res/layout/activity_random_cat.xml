@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- AppBar с заголовком и кнопкой Up -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_random"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorSurface"
+        android:title="Сьогоднішній кіт"
+        android:titleTextColor="@android:color/white"/>
+
+    <!-- Контейнер под фрагмент -->
+    <FrameLayout
+        android:id="@+id/randomFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/sort_alpha"
+        android:title="А → Я"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sort_reverse"
+        android:title="Я → А"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sort_favorites"
+        android:title="★ Улюблені зверху"
+        app:showAsAction="never" />
+
+</menu>
